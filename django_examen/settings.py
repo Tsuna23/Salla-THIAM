@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'account_user',
     'gestion_tache',
-    "corsheaders",#ajout de corsheaders pour la comunications etre les serveurs 
+    "corsheaders",
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -156,7 +156,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = "account_user.Utilisateur" #ajout de la classe Utilisateur comme model de base de donnee
+AUTH_USER_MODEL = "account_user.Utilisateur" 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60), 
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),  
